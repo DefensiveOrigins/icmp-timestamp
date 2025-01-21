@@ -2,3 +2,4 @@ A simple script to convert an hpin3's IMCP timestamp response into human readabl
 
 Something like that.
 
+![Screenshot](img/screenshot.png)
