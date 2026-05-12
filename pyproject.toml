@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "icmp-timecheck"
+version = "1.1.1"
+description = "Convert ICMP Timestamp replies into human‑readable times and report clock offsets."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+  { name = "Defensive Origins" }
+]
+keywords = ["icmp", "timestamp", "scapy", "ntp", "network"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Internet",
+  "Topic :: Security"
+]
+dependencies = [
+  "scapy>=2.4.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/DefensiveOrigins/icmp-timestamp"
+Repository = "https://github.com/DefensiveOrigins/icmp-timestamp"
+
+[project.scripts]
+timecheck = "timecheck:main"
+
+[tool.setuptools]
+py-modules = ["timecheck"]
