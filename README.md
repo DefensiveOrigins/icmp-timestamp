@@ -26,16 +26,19 @@ sudo apt install -y hping3
 ```
 
 #### macOS (Homebrew)
+
 ```
 brew install hping
 ```
 #### Python (For Python script using scapy)
+
 ```
 python3 -m pip install -r requirements.txt
 ```
 ### With Pip
+
 ```
-pip install icmptimecheck
+pip install icmp-timestamp
 ```
 
 
