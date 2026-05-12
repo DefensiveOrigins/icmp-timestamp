@@ -14,8 +14,6 @@ dependencies = [ "scapy>=2.4.0",]
 [[project.authors]]
 name = "Defensive Origins"
 
-[project.license]
-text = "MIT"
 
 [project.urls]
 Homepage = "https://github.com/DefensiveOrigins/icmp-timestamp"
