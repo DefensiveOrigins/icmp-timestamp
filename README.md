@@ -1,4 +1,4 @@
-﻿# icmp-timestamp
+﻿# icmp-timestamp.bash, timecheck.py
 
 A small toolkit to convert ICMP Timestamp (type 13/14) replies into human‑readable times and to report clock offsets.
 
