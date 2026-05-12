@@ -72,6 +72,12 @@ sudo python3 timecheck.py hosts.txt --csv results.csv
 
 ## Using the Bash flow (`hping3` + `pry_bar.sh` + `icmp-timestamp.sh`)
 
+`icmp-timestamp.sh` can be used standalone to convert numeric millisecond timestamps into human-readable times. For example:
+```
+
+![icmptimestamp](img/screenshot.png)
+
+
 `pry_bar.sh` drives `hping3`, extracts round-trip min/avg/max values, and calls `icmp-timestamp.sh` which converts numeric millisecond timestamps into human-readable times.
 
 
@@ -79,6 +85,7 @@ Notes:
 - `hping3` requires root privileges — run with `sudo`.
 - `pry_bar.sh` parses `hping3` output for `round-trip min/avg/max`. It prints per-target RTTs and forwards them to `icmp-timestamp.sh`.
 - `icmp-timestamp.sh` expects numeric millisecond timestamps (or values parsed by `pry_bar.sh`) via `-O` (Originate), `-R` (Receive), `-T` (Transmit). Example:
+
 
 
 ---
