@@ -38,7 +38,7 @@ python3 -m pip install -r requirements.txt
 ### With Pip
 
 ```
-pip install icmp-timestamp
+pip install icmp-timecheck
 ```
 
 
